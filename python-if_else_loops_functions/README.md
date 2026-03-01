@@ -1,1 +1,1 @@
-This project covers if/else statements, loops, and functions in Python.
+This project contains Python scripts for if/else statements and loops.
