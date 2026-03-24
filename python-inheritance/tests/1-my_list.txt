@@ -31,3 +31,8 @@
 >>> my_list = MyList()
 >>> my_list.print_sorted()
 []
+
+>>> # Test __str__ (Printing the object)
+>>> my_list = MyList([1, 2, 3])
+>>> print(my_list)
+[1, 2, 3]
