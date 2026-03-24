@@ -1,1 +1,1 @@
-Everything is object project
+Everything is object
