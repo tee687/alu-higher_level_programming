@@ -8,9 +8,24 @@
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [Exception] area() is not implemented
 
+>>> # Test integer_validator() with missing arguments
+>>> try:
+...     bg.integer_validator()
+... except TypeError as e:
+...     print(e)
+integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> # Test integer_validator("age") with missing value
+>>> try:
+...     bg.integer_validator("age")
+... except TypeError as e:
+...     print(e)
+integer_validator() missing 1 required positional argument: 'value'
+
 >>> # Test integer_validator with valid integer
 >>> bg.integer_validator("my_int", 12)
 >>> bg.integer_validator("width", 89)
+>>> bg.integer_validator("age", 25)
 
 >>> # Test integer_validator with non-integer (string)
 >>> try:
